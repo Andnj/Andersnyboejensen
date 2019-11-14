@@ -1,0 +1,388 @@
+* {
+  margin: 0;
+  padding: 0;
+  scroll-behavior: smooth;
+}
+
+* button:focus {
+  outline: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+.grid-container {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: minmax(1080px, 1fr) auto auto 500px;
+      grid-template-rows: minmax(1080px, 1fr) auto auto 500px;
+}
+
+.grid-Landing {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: 100px auto;
+      grid-template-rows: 100px auto;
+  background-color: #6C98C6;
+}
+
+.grid-Landing .Landing_menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr;
+      grid-template-columns: 1fr 1fr;
+}
+
+.grid-Landing .Landing_menu #name_tag_link {
+  font: 36px "Nunito", sans-serif;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+  margin-left: 95px;
+  margin-top: 30px;
+  white-space: nowrap;
+}
+
+.grid-Landing .Landing_menu li {
+  list-style-type: none;
+  float: right;
+  margin-top: 36px;
+  margin-right: 20px;
+}
+
+.grid-Landing .Landing_menu li a {
+  font: 1.5em "Open Sans", sans-serif;
+  font-weight: 100;
+  color: white;
+  margin-right: 85px;
+}
+
+@media screen and (max-width: 944px) {
+  .grid-Landing .Landing_menu #links {
+    display: none;
+  }
+}
+
+.grid-Landing .Landing_menu #Burger_menu {
+  display: none;
+  width: 40px;
+  margin-top: 10px;
+  margin-left: auto;
+  margin-right: 5%;
+}
+
+@media screen and (max-width: 944px) {
+  .grid-Landing .Landing_menu #Burger_menu {
+    display: block;
+  }
+}
+
+.grid-Landing .Landing_menu #Burger_menu span {
+  display: block;
+  height: 5px;
+  width: 25px;
+  margin-top: 8px;
+  background-color: white;
+  border-radius: 13px;
+  left: 30px;
+  margin-left: auto;
+}
+
+.grid-Landing .Landing_menu #Burger_menu #span_2 {
+  width: 100%;
+}
+
+.grid-Landing .Landing_menu #Burger_menu #span_1 {
+  width: 30px;
+}
+
+.grid-Landing .Landing_menu #Burger_menu #span_3 {
+  width: 20px;
+}
+
+@media only screen and (max-width: 768px) {
+  .grid-Landing #links_mobile {
+    position: fixed;
+    display: block;
+    float: none;
+    background-color: #141414;
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    font-size: 3em;
+    overflow: hidden;
+    padding-top: 40%;
+    z-index: 100;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+  }
+  .grid-Landing #links_mobile li a {
+    -webkit-animation: fadeIt 1s ease-in-out;
+            animation: fadeIt 1s ease-in-out;
+    color: white;
+    font-weight: 100;
+  }
+}
+
+@media screen and (orientation: landscape) {
+  .grid-Landing #links_mobile {
+    padding-top: 5%;
+    font-size: 2em;
+  }
+}
+
+.grid-Landing .Landing_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: center;
+      align-content: center;
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action {
+  font-family: "Open Sans", sans-serif;
+  color: white;
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  margin-bottom: 240px;
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-Landing .Landing_content .Landing_call_to_action {
+    margin-top: 240px;
+  }
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action h1 {
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 65px;
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action p {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 34px;
+  margin-top: 40px;
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action .button_call_to_action {
+  margin-top: 117px;
+  float: left;
+  width: 276px;
+  height: 86px;
+  border-radius: 13px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  text-align: center;
+  font-family: "Nunito", sans-serif;
+  font-weight: bold;
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action .button_call_to_action p {
+  margin-top: 25px;
+  font-size: 2rem;
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action #call_to_action_left {
+  background: white;
+  color: #165ECC;
+  margin-right: 21px;
+}
+
+.grid-Landing .Landing_content .Landing_call_to_action #call_to_action_right {
+  background: #165ECC;
+  color: white;
+}
+
+.grid-Landing .Landing_content .Landing_img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+}
+
+.grid-Landing .Landing_content .Landing_img img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-Landing .Landing_content .Landing_img figcaption {
+  float: right;
+  color: white;
+  margin-right: 120px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.grid-projects {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: minmax(865px, 1fr);
+  margin-top: 200px;
+  margin-bottom: 320px;
+}
+
+.grid-projects article {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(600px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+}
+
+.grid-projects #projects_article_middel {
+  margin-left: 200px;
+}
+
+@media screen and (max-width: 1199px) {
+  .grid-projects #projects_article_middel {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    margin-left: 0px;
+  }
+}
+
+.grid-projects section {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+}
+
+.grid-projects .projects_titel {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 2.625rem;
+  text-transform: capitalize;
+  line-height: 57px;
+  padding-bottom: 50px;
+}
+
+.grid-projects .projects_text {
+  font-family: "Open Sans", sans-serif;
+  color: #323232;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1.5rem;
+}
+
+@media screen and (max-width: 944px) {
+  .grid-projects .projects_titel,
+  .grid-projects .projects_text {
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+
+.grid-projects figure {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.grid-projects figure img {
+  max-width: 100%;
+  height: auto;
+}
+
+.grid-contacts {
+  display: -ms-grid;
+  display: grid;
+  grid-auto-rows: auto;
+}
+
+.grid-contacts .contacts_content {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.grid-contacts .contacts_img {
+  -ms-grid-column-align: center;
+      justify-self: center;
+  background-image: url("/img/ball_array.svg"), url("/img/X_array.svg");
+  background-repeat: no-repeat, no-repeat;
+  background-position: calc(100% - 0px) calc(25% - 0px), calc(0% - 0px) calc(60% - 0px);
+}
+
+.grid-contacts #profile_image {
+  max-width: 450px;
+  height: auto;
+  -webkit-clip-path: circle(34.4% at 50% 35%);
+          clip-path: circle(34.4% at 50% 35%);
+  margin-top: 100px;
+}
+
+.grid-contacts .contacts_info {
+  -ms-flex-item-align: center;
+      -ms-grid-row-align: center;
+      align-self: center;
+  -ms-grid-column-align: start;
+      justify-self: start;
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 2.25rem;
+  font-weight: 300;
+  line-height: 200%;
+}
+
+.grid-contacts .contacts_info a {
+  font-weight: 600;
+  color: #323232;
+}
+
+.grid-contacts #name_contacts_info {
+  font-size: 4rem;
+  line-height: 200%;
+}
+
+.grid-contacts .contacts_status {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: (minmax(400px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  -ms-grid-column-align: center;
+      justify-self: center;
+  color: #323232;
+  font-family: "Open Sans", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: 300;
+  -ms-grid-row-align: start;
+      align-self: start;
+  margin-bottom: 50px;
+}
+
+.grid-contacts .contacts_status span {
+  color: #2BC456;
+  font-family: "Nunito", sans-serif;
+  font-style: normal;
+  font-size: 3rem;
+  font-weight: bold;
+  -webkit-text-decoration-line: underline;
+          text-decoration-line: underline;
+}
+
+.grid-footer {
+  display: -ms-grid;
+  display: grid;
+  background-color: black;
+}
+/*# sourceMappingURL=main.css.map */

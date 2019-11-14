@@ -1,0 +1,419 @@
+$primary-color: #6C98C6;
+$Second-color: #165ECC;
+$third-color: white;
+$fourth-color: black;
+$fifth-color: #165ECC;
+$sixth-color: #323232;
+$Main_font:'Open Sans',
+sans-serif;
+$Second_font:'Nunito',
+sans-serif;
+
+* {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+
+    button:focus {
+        outline: 0;
+    }
+}
+
+// section,
+// article,
+// figure,
+// address,
+// nav,
+// li,
+// a {
+//     border: 1px solid black;
+// }
+
+a {
+    text-decoration: none;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-rows: minmax(1080px, 1fr) auto auto 500px;
+}
+
+.grid-Landing {
+    display: grid;
+    grid-template-rows: 100px auto;
+    background-color: $primary-color;
+
+
+    .Landing_menu {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+
+        #name_tag_link {
+            font: 36px $Second_font;
+            font-weight: bold;
+            text-decoration: none;
+            color: $third-color;
+            margin-left: 95px;
+            margin-top: 30px;
+            white-space: nowrap;
+
+
+        }
+
+        li {
+            list-style-type: none;
+            float: right;
+            margin-top: 36px;
+            margin-right: 20px;
+
+
+
+            a {
+                font: 1.5em $Main_font;
+                font-weight: 100;
+                color: $third-color;
+                margin-right: 85px;
+
+            }
+
+        }
+
+        #links {
+
+            @media screen and (max-width: 944px) {
+                display: none;
+            }
+
+        }
+
+        #Burger_menu {
+            display: none;
+            width: 40px;
+
+            // border: 1px solid black;
+            margin-top: 10px;
+            margin-left: auto;
+            margin-right: 5%;
+
+            @media screen and (max-width: 944px) {
+                display: block;
+            }
+
+            span {
+                display: block;
+                height: 5px;
+                width: 25px;
+                margin-top: 8px;
+                background-color: white;
+                border-radius: 13px;
+                left: 30px;
+                margin-left: auto;
+
+            }
+
+            #span_2 {
+                width: 100%;
+
+            }
+
+            #span_1 {
+                width: 30px;
+
+            }
+
+            #span_3 {
+                width: 20px;
+                // margin-left: auto;
+            }
+        }
+
+
+    }
+
+    #links_mobile {
+        @media only screen and (max-width: 768px) {
+
+            position: fixed;
+            display: block;
+            float: none;
+            background-color: rgb(20, 20, 20);
+            height: 100%;
+            width: 100%;
+            text-align: center;
+            font-size: 3em;
+            overflow: hidden;
+            padding-top: 40%;
+            z-index: 100;
+            user-select: none;
+
+
+            li a {
+                animation: fadeIt 1s ease-in-out;
+                color: rgb(255, 255, 255);
+                font-weight: 100;
+
+            }
+
+
+
+
+        }
+
+        @media screen and (orientation: landscape) {
+            padding-top: 5%;
+            font-size: 2em;
+        }
+    }
+
+    .Landing_content {
+
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+        justify-content: center;
+        align-content: center;
+
+        .Landing_call_to_action {
+            font-family: $Main_font;
+            color: $third-color;
+            // margin-top: 240px;
+            // margin-left: 95px;
+            justify-self: center;
+            align-self: center;
+            margin-bottom: 240px;
+
+            @media screen and (max-width: 1199px) {
+                //chance this
+                margin-top: 240px;
+
+            }
+
+            h1 {
+                font-weight: bold;
+                font-size: 3rem;
+                line-height: 65px;
+            }
+
+            p {
+                font-weight: 600;
+                // font-size: 25px;
+                font-size: 1.5rem;
+                line-height: 34px;
+                margin-top: 40px;
+            }
+
+            .button_call_to_action {
+                margin-top: 117px;
+                float: left;
+                width: 276px;
+                height: 86px;
+                border-radius: 13px;
+                align-items: center;
+                text-align: center;
+                font-family: $Second_font;
+                font-weight: bold;
+
+                p {
+                    margin-top: 25px;
+                    font-size: 2rem;
+                }
+
+            }
+
+            #call_to_action_left {
+                background: $third-color;
+                color: $fifth-color;
+                margin-right: 21px;
+
+            }
+
+            #call_to_action_right {
+
+                background: $fifth-color;
+                color: $third-color;
+            }
+
+        }
+
+        .Landing_img {
+
+            justify-self: center;
+            align-self: stretch;
+            // max-width: 600px;
+
+
+            img {
+                max-width: 100%;
+                height: auto;
+            }
+
+
+
+            figcaption {
+                float: right;
+                color: $third-color;
+                margin-right: 120px;
+                font-family: $Main_font;
+            }
+
+        }
+    }
+
+}
+
+.grid-projects {
+    display: grid;
+
+    grid-auto-rows: minmax(865px, 1fr);
+    margin-top: 200px;
+    margin-bottom: 320px;
+
+
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+
+    }
+
+    #projects_article_middel {
+        margin-left: 200px;
+
+        @media screen and (max-width: 1199px) {
+
+            order: 2;
+            margin-left: 0px;
+        }
+    }
+
+    section {
+        align-self: center;
+
+
+    }
+
+    .projects_titel {
+        font-family: $Main_font;
+        color: $sixth-color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.625rem;
+        text-transform: capitalize;
+        line-height: 57px;
+        padding-bottom: 50px;
+
+
+    }
+
+    .projects_text {
+        font-family: $Main_font;
+        color: $sixth-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+    .projects_titel,
+    .projects_text {
+        @media screen and (max-width: 944px) {
+
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+    figure {
+        align-self: center;
+        justify-self: center;
+
+        img {
+            max-width: 100%;
+            height: auto;
+
+        }
+    }
+}
+
+.grid-contacts {
+    display: grid;
+
+    grid-auto-rows: auto;
+
+    .contacts_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+
+    .contacts_img {
+        justify-self: center;
+        background-image: url('/img/ball_array.svg'), url('/img/X_array.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+            calc(100% - 0px) calc(25% - 0px),
+            calc(0% - 0px) calc(60% - 0px);
+
+    }
+
+    #profile_image {
+        max-width: 450px;
+        height: auto;
+        clip-path: circle(34.4% at 50% 35%);
+        margin-top: 100px;
+
+    }
+
+
+
+    .contacts_info {
+        align-self: center;
+        justify-self: start;
+        color: $sixth-color;
+        font-family: $Main_font;
+        font-style: normal;
+        font-size: 2.25rem;
+        font-weight: 300;
+        line-height: 200%;
+
+        a {
+            font-weight: 600;
+            color: $sixth-color;
+        }
+    }
+
+    #name_contacts_info {
+        font-size: 4rem;
+        line-height: 200%;
+    }
+
+    .contacts_status {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-self: center;
+        color: $sixth-color;
+        font-family: $Main_font;
+        font-style: normal;
+        font-size: 3rem;
+        font-weight: 300;
+        align-self: start;
+        margin-bottom: 50px;
+
+        span {
+            color: #2BC456;
+            font-family: $Second_font;
+            font-style: normal;
+            font-size: 3rem;
+            font-weight: bold;
+            text-decoration-line: underline;
+        }
+    }
+
+
+}
+
+.grid-footer {
+    display: grid;
+    // grid-template-columns: 1fr 1fr;
+    background-color: $fourth-color;
+
+}
