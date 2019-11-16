@@ -19,6 +19,23 @@ sans-serif;
     }
 }
 
+html {
+    font-size: 16px;
+}
+
+@media (max-width: 944px) {
+    html {
+        font-size: 15px;
+    }
+}
+
+@media (max-width: 400px) {
+    html {
+        font-size: 12px;
+    }
+}
+
+
 // section,
 // article,
 // figure,
@@ -49,7 +66,7 @@ a {
         grid-template-columns: 1fr 1fr;
 
         #name_tag_link {
-            font: 36px $Second_font;
+            font: 2.25rem $Second_font;
             font-weight: bold;
             text-decoration: none;
             color: $third-color;
@@ -57,6 +74,9 @@ a {
             margin-top: 30px;
             white-space: nowrap;
 
+            @media screen and (max-width: 944px) {
+                margin-left: 15px;
+            }
 
         }
 
@@ -69,7 +89,7 @@ a {
 
 
             a {
-                font: 1.5em $Main_font;
+                font: 1.5rem $Main_font;
                 font-weight: 100;
                 color: $third-color;
                 margin-right: 85px;
@@ -123,7 +143,6 @@ a {
 
             #span_3 {
                 width: 20px;
-                // margin-left: auto;
             }
         }
 
@@ -140,7 +159,7 @@ a {
             height: 100%;
             width: 100%;
             text-align: center;
-            font-size: 3em;
+            font-size: 3rem;
             overflow: hidden;
             padding-top: 40%;
             z-index: 100;
@@ -161,7 +180,7 @@ a {
 
         @media screen and (orientation: landscape) {
             padding-top: 5%;
-            font-size: 2em;
+            font-size: 2rem;
         }
     }
 
@@ -175,25 +194,22 @@ a {
         .Landing_call_to_action {
             font-family: $Main_font;
             color: $third-color;
-            // margin-top: 240px;
-            // margin-left: 95px;
             justify-self: center;
             align-self: center;
             margin-bottom: 240px;
 
             @media screen and (max-width: 1199px) {
-                //chance this
                 margin-top: 240px;
 
             }
 
-            h1 {
+            .Landing_call_to_action_titel {
                 font-weight: bold;
                 font-size: 3rem;
                 line-height: 65px;
             }
 
-            p {
+            .Landing_call_to_action_text {
                 font-weight: 600;
                 // font-size: 25px;
                 font-size: 1.5rem;
@@ -204,16 +220,16 @@ a {
             .button_call_to_action {
                 margin-top: 117px;
                 float: left;
-                width: 276px;
-                height: 86px;
+                // width: 276px;
+                // height: 86px;
+                padding: 1.5em 2.5em;
                 border-radius: 13px;
-                align-items: center;
-                text-align: center;
+                // align-items: center;
+                // text-align: center;
                 font-family: $Second_font;
                 font-weight: bold;
 
                 p {
-                    margin-top: 25px;
                     font-size: 2rem;
                 }
 
@@ -236,14 +252,14 @@ a {
 
         .Landing_img {
 
-            justify-self: center;
-            align-self: stretch;
             // max-width: 600px;
-
-
             img {
                 max-width: 100%;
                 height: auto;
+
+                @media screen and (max-width: 944px) {
+                    max-width: 80%;
+                }
             }
 
 
@@ -415,5 +431,6 @@ a {
     display: grid;
     // grid-template-columns: 1fr 1fr;
     background-color: $fourth-color;
+
 
 }

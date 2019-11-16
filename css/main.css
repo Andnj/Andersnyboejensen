@@ -8,6 +8,22 @@
   outline: 0;
 }
 
+html {
+  font-size: 16px;
+}
+
+@media (max-width: 944px) {
+  html {
+    font-size: 15px;
+  }
+}
+
+@media (max-width: 400px) {
+  html {
+    font-size: 12px;
+  }
+}
+
 a {
   text-decoration: none;
 }
@@ -35,13 +51,19 @@ a {
 }
 
 .grid-Landing .Landing_menu #name_tag_link {
-  font: 36px "Nunito", sans-serif;
+  font: 2.25rem "Nunito", sans-serif;
   font-weight: bold;
   text-decoration: none;
   color: white;
   margin-left: 95px;
   margin-top: 30px;
   white-space: nowrap;
+}
+
+@media screen and (max-width: 944px) {
+  .grid-Landing .Landing_menu #name_tag_link {
+    margin-left: 15px;
+  }
 }
 
 .grid-Landing .Landing_menu li {
@@ -52,7 +74,7 @@ a {
 }
 
 .grid-Landing .Landing_menu li a {
-  font: 1.5em "Open Sans", sans-serif;
+  font: 1.5rem "Open Sans", sans-serif;
   font-weight: 100;
   color: white;
   margin-right: 85px;
@@ -110,7 +132,7 @@ a {
     height: 100%;
     width: 100%;
     text-align: center;
-    font-size: 3em;
+    font-size: 3rem;
     overflow: hidden;
     padding-top: 40%;
     z-index: 100;
@@ -130,7 +152,7 @@ a {
 @media screen and (orientation: landscape) {
   .grid-Landing #links_mobile {
     padding-top: 5%;
-    font-size: 2em;
+    font-size: 2rem;
   }
 }
 
@@ -163,13 +185,13 @@ a {
   }
 }
 
-.grid-Landing .Landing_content .Landing_call_to_action h1 {
+.grid-Landing .Landing_content .Landing_call_to_action .Landing_call_to_action_titel {
   font-weight: bold;
   font-size: 3rem;
   line-height: 65px;
 }
 
-.grid-Landing .Landing_content .Landing_call_to_action p {
+.grid-Landing .Landing_content .Landing_call_to_action .Landing_call_to_action_text {
   font-weight: 600;
   font-size: 1.5rem;
   line-height: 34px;
@@ -179,19 +201,13 @@ a {
 .grid-Landing .Landing_content .Landing_call_to_action .button_call_to_action {
   margin-top: 117px;
   float: left;
-  width: 276px;
-  height: 86px;
+  padding: 1.5em 2.5em;
   border-radius: 13px;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: bold;
 }
 
 .grid-Landing .Landing_content .Landing_call_to_action .button_call_to_action p {
-  margin-top: 25px;
   font-size: 2rem;
 }
 
@@ -206,17 +222,15 @@ a {
   color: white;
 }
 
-.grid-Landing .Landing_content .Landing_img {
-  -ms-grid-column-align: center;
-      justify-self: center;
-  -ms-flex-item-align: stretch;
-      -ms-grid-row-align: stretch;
-      align-self: stretch;
-}
-
 .grid-Landing .Landing_content .Landing_img img {
   max-width: 100%;
   height: auto;
+}
+
+@media screen and (max-width: 944px) {
+  .grid-Landing .Landing_content .Landing_img img {
+    max-width: 80%;
+  }
 }
 
 .grid-Landing .Landing_content .Landing_img figcaption {
