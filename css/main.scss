@@ -23,8 +23,6 @@ html {
     font-size: 16px;
 }
 
-
-
 @media (max-width: 944px) {
     html {
         font-size: 15px;
@@ -100,7 +98,6 @@ a {
 
             li {
                 list-style-type: none;
-                // float: left;
                 margin-top: 36px;
                 margin-left: 80px;
 
@@ -110,8 +107,6 @@ a {
                     font: 1.5rem $Main_font;
                     font-weight: 100;
                     color: $third-color;
-                    // margin-right: 85px;
-
                 }
 
             }
@@ -121,8 +116,6 @@ a {
         #Burger_menu {
             display: none;
             width: 40px;
-
-            // border: 1px solid black;
             margin-top: 10px;
             margin-left: auto;
             margin-right: 5%;
@@ -220,13 +213,13 @@ a {
 
             }
 
-            .Landing_call_to_action_titel {
+            .titel_landing_call_to_action {
                 font-weight: bold;
                 font-size: 3rem;
                 line-height: 65px;
             }
 
-            .Landing_call_to_action_text {
+            .text_landing_call_to_action {
                 font-weight: 600;
                 font-size: 1.5rem;
                 line-height: 34px;
@@ -259,7 +252,6 @@ a {
                 background: $fifth-color;
                 color: $third-color;
             }
-
         }
 
         .Landing_img {
@@ -270,17 +262,13 @@ a {
                 @media screen and (max-width: 1220px) {
                     max-width: 90%;
                     margin-left: 5%;
-
                 }
 
                 @media screen and (max-width: 944px) {
                     max-width: 80%;
                     margin-left: 10%;
-
                 }
             }
-
-
 
             figcaption {
                 float: right;
@@ -288,10 +276,8 @@ a {
                 margin-right: 120px;
                 font-family: $Main_font;
             }
-
         }
     }
-
 }
 
 .grid-projects {
@@ -301,7 +287,10 @@ a {
     margin-top: 200px;
     margin-bottom: 320px;
 
+    @media screen and (max-width: 944px) {
 
+        margin-top: 0px;
+    }
 
     article {
         display: grid;
@@ -327,6 +316,11 @@ a {
 
             margin-left: 5%;
         }
+
+        @media screen and (max-width: 944px) {
+
+            margin-top: 100px;
+        }
     }
 
     .projects_titel {
@@ -348,7 +342,6 @@ a {
         font-style: normal;
         font-weight: normal;
         font-size: 1.5rem;
-        // min-width: 600px;
     }
 
     .projects_titel,
@@ -368,6 +361,11 @@ a {
             max-width: 100%;
             height: auto;
 
+        }
+
+        @media screen and (max-width: 944px) {
+
+            margin-top: 200px;
         }
     }
 }
