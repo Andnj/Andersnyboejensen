@@ -23,11 +23,20 @@ html {
     font-size: 16px;
 }
 
+
+
 @media (max-width: 944px) {
     html {
         font-size: 15px;
     }
 }
+
+@media (max-width: 600px) {
+    html {
+        font-size: 13px;
+    }
+}
+
 
 @media (max-width: 400px) {
     html {
@@ -80,28 +89,31 @@ a {
 
         }
 
-        li {
-            list-style-type: none;
-            float: right;
-            margin-top: 36px;
-            margin-right: 20px;
-
-
-
-            a {
-                font: 1.5rem $Main_font;
-                font-weight: 100;
-                color: $third-color;
-                margin-right: 85px;
-
-            }
-
-        }
 
         #links {
+            display: flex;
+            margin-left: 300px;
 
             @media screen and (max-width: 944px) {
                 display: none;
+            }
+
+            li {
+                list-style-type: none;
+                // float: left;
+                margin-top: 36px;
+                margin-left: 80px;
+
+                white-space: nowrap;
+
+                a {
+                    font: 1.5rem $Main_font;
+                    font-weight: 100;
+                    color: $third-color;
+                    // margin-right: 85px;
+
+                }
+
             }
 
         }
@@ -198,7 +210,12 @@ a {
             align-self: center;
             margin-bottom: 240px;
 
-            @media screen and (max-width: 1199px) {
+            @media (max-width: 1400px) {
+                margin-left: 5%;
+
+            }
+
+            @media screen and (max-width: 1220px) {
                 margin-top: 240px;
 
             }
@@ -211,7 +228,6 @@ a {
 
             .Landing_call_to_action_text {
                 font-weight: 600;
-                // font-size: 25px;
                 font-size: 1.5rem;
                 line-height: 34px;
                 margin-top: 40px;
@@ -220,12 +236,8 @@ a {
             .button_call_to_action {
                 margin-top: 117px;
                 float: left;
-                // width: 276px;
-                // height: 86px;
                 padding: 1.5em 2.5em;
                 border-radius: 13px;
-                // align-items: center;
-                // text-align: center;
                 font-family: $Second_font;
                 font-weight: bold;
 
@@ -251,14 +263,20 @@ a {
         }
 
         .Landing_img {
-
-            // max-width: 600px;
             img {
                 max-width: 100%;
                 height: auto;
 
+                @media screen and (max-width: 1220px) {
+                    max-width: 90%;
+                    margin-left: 5%;
+
+                }
+
                 @media screen and (max-width: 944px) {
                     max-width: 80%;
+                    margin-left: 10%;
+
                 }
             }
 
@@ -295,17 +313,20 @@ a {
     #projects_article_middel {
         margin-left: 200px;
 
-        @media screen and (max-width: 1199px) {
+        @media screen and (max-width: 944px) {
 
             order: 2;
-            margin-left: 0px;
+            margin-left: 5%;
         }
     }
 
     section {
         align-self: center;
 
+        @media screen and (max-width: 1220px) {
 
+            margin-left: 5%;
+        }
     }
 
     .projects_titel {
@@ -327,6 +348,7 @@ a {
         font-style: normal;
         font-weight: normal;
         font-size: 1.5rem;
+        // min-width: 600px;
     }
 
     .projects_titel,
@@ -354,6 +376,7 @@ a {
     display: grid;
 
     grid-auto-rows: auto;
+
 
     .contacts_content {
         display: grid;
@@ -391,16 +414,25 @@ a {
         font-weight: 300;
         line-height: 200%;
 
+
         a {
             font-weight: 600;
             color: $sixth-color;
         }
+
+        #name_contacts_info {
+            font-size: 4rem;
+            line-height: 200%;
+        }
+
+        @media (max-width: 944px) {
+            margin-left: 5%;
+
+        }
+
     }
 
-    #name_contacts_info {
-        font-size: 4rem;
-        line-height: 200%;
-    }
+
 
     .contacts_status {
         display: grid;
@@ -414,6 +446,12 @@ a {
         align-self: start;
         margin-bottom: 50px;
 
+        @media (max-width: 944px) {
+            margin-top: 50px;
+            margin-left: 5%;
+            font-size: 2rem;
+        }
+
         span {
             color: #2BC456;
             font-family: $Second_font;
@@ -421,6 +459,10 @@ a {
             font-size: 3rem;
             font-weight: bold;
             text-decoration-line: underline;
+
+            @media (max-width: 944px) {
+                font-size: 2rem;
+            }
         }
     }
 
