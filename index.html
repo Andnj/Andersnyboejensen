@@ -26,13 +26,14 @@
                     <li><a href="/Pages/Om_mig.html">Om Mig</a></li>
                 </nav>
 
-                <!-- <nav id="links_mobile">
+                <nav id="links_mobile">
+                    <a id="Close_menu" onclick="menu_mobile(this)"><span id="Close_menu_button">X</span> </a>
                     <li><a href="../index.html">Home</a></li>
-                    <li><a href="Projket.html">Projket</a></li>
-                    <li><a href="Skills.html">Skills</a></li>
-                    <li><a href="Om_mig.html">Om Mig</a></li>
-                </nav> -->
-                <a id="Burger_menu" href="">
+                    <li><a href="/Pages/Projket.html">Projket</a></li>
+                    <li><a href="/Pages/Skills.html">Skills</a></li>
+                    <li><a href="/Pages/Om_mig.html">Om Mig</a></li>
+                </nav>
+                <a id="Burger_menu" onclick="menu_mobile(this)">
                     <span id="span_1"></span>
                     <span id="span_2"></span>
                     <span id="span_3"></span>
@@ -131,7 +132,7 @@
                 <option value="English">English</option>
             </select>
             <nav>
-                <li>
+                <li class="category_name">
                     Sitemap
                 </li>
                 <li><a href="index.html"> Home</a></li>
@@ -140,6 +141,9 @@
                 <li><a href="/Pages/Om_mig.html">Om Mig</a></li>
             </nav>
             <nav>
+                <li class="category_name">
+                    Kontakter
+                </li>
                 <li> Email: andnj25@gmail.com </li>
                 <li> Mobil: +45 20 82 63 45 </li>
 

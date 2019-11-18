@@ -1,28 +1,47 @@
 .footer {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    // grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
     background-color: $fourth-color;
+    // justify-items: center;
+
+    nav,
+    .languages {
+        margin-top: 10%;
+        margin-left: 10%;
+
+    }
 
     nav li,
     a {
         text-decoration: none;
         list-style-type: none;
-        font-size: 1rem;
+        font-size: 1.1rem;
         color: $third-color;
         font-family: $Main_font;
+        margin-bottom: 5%;
     }
 
 
     .languages {
-        border: 2px solid $third-color;
+
         user-select: none;
         height: 40px;
         width: 150px;
         font-size: 1em;
-        color: white;
-        // color: $fourth-color;
-        background-color: $fourth-color;
+        color: black;
+        background-color: white;
+        background-image: url(/img/globus.svg);
+        background-size: 25px;
+        background-repeat: no-repeat;
+        background-position: 100px;
 
+    }
+
+    .category_name {
+        font-size: 1.3rem;
+        font-weight: bold;
+        margin-bottom: 20px;
     }
 
 }

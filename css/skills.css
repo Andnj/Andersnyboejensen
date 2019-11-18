@@ -94,6 +94,7 @@ html {
   margin-top: 10px;
   margin-left: auto;
   margin-right: 5%;
+  cursor: pointer;
 }
 
 @media screen and (max-width: 944px) {
@@ -143,10 +144,13 @@ html {
           user-select: none;
 }
 
-@media only screen and (max-width: 944px) {
-  #links_mobile {
-    display: block;
-  }
+#links_mobile #Close_menu_button {
+  position: fixed;
+  top: 10px;
+  right: 3%;
+  font-size: 3rem;
+  color: white;
+  font-family: "Open Sans", sans-serif;
 }
 
 #links_mobile li {
@@ -154,12 +158,30 @@ html {
 }
 
 #links_mobile li a {
-  -webkit-animation: fadeIt 1s ease-in-out;
-          animation: fadeIt 1s ease-in-out;
+  -webkit-animation: fadeIt 0.8s ease-in-out;
+          animation: fadeIt 0.8s ease-in-out;
   color: white;
   font-weight: 100;
   font-size: 3rem;
   font-family: "Open Sans", sans-serif;
+}
+
+@-webkit-keyframes fadeIt {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: white;
+  }
+}
+
+@keyframes fadeIt {
+  0% {
+    color: rgba(0, 0, 0, 0);
+  }
+  100% {
+    color: white;
+  }
 }
 
 @media screen and (orientation: landscape) {
@@ -172,22 +194,28 @@ html {
 .footer {
   display: -ms-grid;
   display: grid;
-  -ms-grid-columns: 1fr 1fr 1fr;
-      grid-template-columns: 1fr 1fr 1fr;
+  -ms-grid-columns: (minmax(500px, 1fr))[auto-fit];
+      grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
   background-color: black;
+}
+
+.footer nav,
+.footer .languages {
+  margin-top: 10%;
+  margin-left: 10%;
 }
 
 .footer nav li,
 .footer a {
   text-decoration: none;
   list-style-type: none;
-  font-size: 1rem;
+  font-size: 1.1rem;
   color: white;
   font-family: "Open Sans", sans-serif;
+  margin-bottom: 5%;
 }
 
 .footer .languages {
-  border: 2px solid white;
   -webkit-user-select: none;
      -moz-user-select: none;
       -ms-user-select: none;
@@ -195,8 +223,18 @@ html {
   height: 40px;
   width: 150px;
   font-size: 1em;
-  color: white;
-  background-color: black;
+  color: black;
+  background-color: white;
+  background-image: url(/img/globus.svg);
+  background-size: 25px;
+  background-repeat: no-repeat;
+  background-position: 100px;
+}
+
+.footer .category_name {
+  font-size: 1.3rem;
+  font-weight: bold;
+  margin-bottom: 20px;
 }
 
 .grid-container {

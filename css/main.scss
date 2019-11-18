@@ -14,5 +14,5 @@
 
 .grid-container {
     display: grid;
-    grid-template-rows: minmax(1080px, 1fr) auto auto 500px;
+    grid-template-rows: minmax(1080px, 1fr) auto auto auto;
 }
