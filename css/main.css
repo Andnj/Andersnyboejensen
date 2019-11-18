@@ -350,11 +350,8 @@ html {
   }
 }
 
-.main_projects .test {
-  opacity: 0;
-}
-
-.main_projects .test2 {
+.main_projects .anim_left,
+.main_projects .anim_right {
   opacity: 0;
 }
 

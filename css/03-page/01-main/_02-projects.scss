@@ -24,11 +24,8 @@
         }
     }
 
-    .test {
-        opacity: 0;
-    }
-
-    .test2 {
+    .anim_left,
+    .anim_right {
         opacity: 0;
     }
 
@@ -55,6 +52,7 @@
             transform: translateX(0);
         }
     }
+
 
 
     #projects_article_middel {

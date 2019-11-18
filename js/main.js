@@ -3,19 +3,19 @@ function handleSelect(elm) {
 };
 
 
-const pro_left = document.querySelectorAll('.test');
-const pro_right = document.querySelectorAll('.test2');
+const pro_left = document.querySelectorAll('.anim_left');
+const pro_right = document.querySelectorAll('.anim_right');
 
 let options = {
     root: null,
-    rootMargin: '30% 0px 0px 70%',
-    threshold: 1.0
+    rootMargin: '30% 0px 0px 50%',
+    threshold: 0.5
 };
 
 function callback_1(entries) {
     entries.forEach(entrie => {
         console.log(entrie);
-        if (entrie.intersectionRatio > 0.0) {
+        if (entrie.intersectionRatio > 0) {
             entrie.target.style.animation = 'anim1 0.8s forwards ease-out';
         } else {
             entrie.target.style.animation = 'none';
