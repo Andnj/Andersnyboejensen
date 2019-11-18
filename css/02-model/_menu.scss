@@ -1,0 +1,130 @@
+.menu {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: $primary-color;
+
+    #name_tag_link {
+        font: 2.25rem $Second_font;
+        font-weight: bold;
+        text-decoration: none;
+        color: $third-color;
+        margin-left: 95px;
+        margin-top: 30px;
+        white-space: nowrap;
+
+        @media screen and (max-width: 944px) {
+            margin-left: 15px;
+        }
+
+
+
+
+    }
+
+    #links {
+        display: flex;
+        margin-left: 300px;
+
+        @media screen and (max-width: 944px) {
+            display: none;
+        }
+
+        li {
+            list-style-type: none;
+            margin-top: 36px;
+            margin-left: 80px;
+
+            white-space: nowrap;
+
+            a {
+                font: 1.5rem $Main_font;
+                font-weight: 100;
+                color: $third-color;
+
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
+
+        }
+
+    }
+
+    #Burger_menu {
+        display: none;
+        width: 40px;
+        margin-top: 10px;
+        margin-left: auto;
+        margin-right: 5%;
+
+        @media screen and (max-width: 944px) {
+            display: block;
+        }
+
+        span {
+            display: block;
+            height: 5px;
+            width: 25px;
+            margin-top: 8px;
+            background-color: white;
+            border-radius: 13px;
+            left: 30px;
+            margin-left: auto;
+
+        }
+
+        #span_2 {
+            width: 100%;
+
+        }
+
+        #span_1 {
+            width: 30px;
+
+        }
+
+        #span_3 {
+            width: 20px;
+        }
+    }
+
+
+}
+
+#links_mobile {
+    display: none;
+
+    @media only screen and (max-width: 944px) {
+        display: block;
+    }
+
+    position: fixed;
+    float: none;
+    background-color: rgb(20, 20, 20);
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    overflow: hidden;
+    list-style-type: none;
+    padding-top: 40%;
+    z-index: 100;
+    user-select: none;
+
+
+    li {
+        margin-top: 5%;
+
+        a {
+            animation: fadeIt 1s ease-in-out;
+            color: rgb(255, 255, 255);
+            font-weight: 100;
+            font-size: 3rem;
+            font-family: $Main_font;
+        }
+    }
+
+    @media screen and (orientation: landscape) {
+        padding-top: 5%;
+        font-size: 2rem;
+    }
+}

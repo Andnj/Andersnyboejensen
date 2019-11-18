@@ -14,22 +14,22 @@
 
 <body>
     <div class="grid-container">
-        <header class="grid-Landing">
+        <header class="Landing">
 
-            <section class="Landing_menu">
+            <section class="menu">
                 <a id="name_tag_link" href="index.html">Anders Nyboe Jensen</a>
                 <nav id="links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="">Projket</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Om Mig</a></li>
+                    <li><a href="/Pages/Projket.html">Projket</a></li>
+                    <li><a href="/Pages/Skills.html">Skills</a></li>
+                    <li><a href="/Pages/Om_mig.html">Om Mig</a></li>
                 </nav>
 
                 <!-- <nav id="links_mobile">
-                    <li><a href="">Om Mig</a></li>
-                    <li><a href="">Skills</a></li>
-                    <li><a href="">Projket</a></li>
-                    <li><a href="index.html">Home</a></li>
+                    <li><a href="../index.html">Home</a></li>
+                    <li><a href="Projket.html">Projket</a></li>
+                    <li><a href="Skills.html">Skills</a></li>
+                    <li><a href="Om_mig.html">Om Mig</a></li>
                 </nav> -->
                 <a id="Burger_menu" href="">
                     <span id="span_1"></span>
@@ -54,8 +54,8 @@
                 </figure>
             </section>
         </header>
-        <main class="grid-projects" id="projects">
-            <article>
+        <main class="main_projects" id="projects">
+            <article class="test">
                 <figure>
                     <img src="https://picsum.photos/600/600/?random
                 " alt="">
@@ -70,8 +70,11 @@
                 </section>
 
             </article>
-            <article>
-
+            <article class="test2">
+                <figure id="projects_article_middel_img">
+                    <img src="https://picsum.photos/600/600/?random
+                                " alt="">
+                </figure>
                 <section id="projects_article_middel">
                     <p class="projects_titel">mollit tempor ex anim mollit</p>
                     <p class="projects_text">Ut mollit officia esse tempor pariatur duis dolore officia duis sunt. Nisi
@@ -80,12 +83,9 @@
                         labore exercitation. Ipsum excepteur et in culpa consequat eiusmod cupidatat elit nisi proident
                         labore irure officia. Eiusmod laboris mollit aliquip aute sit voluptate occaecat.
                 </section>
-                <figure>
-                    <img src="https://picsum.photos/600/600/?random
-                                " alt="">
-                </figure>
+
             </article>
-            <article>
+            <article class="test">
                 <figure>
                     <img src="https://picsum.photos/600/600/?random
                 " alt="">
@@ -100,7 +100,7 @@
                 </section>
             </article>
         </main>
-        <section class="grid-contacts" id="contacts">
+        <section class="contacts" id="contacts">
             <section class="contacts_content">
                 <figure class="contacts_img">
                     <img id="profile_image" src="img/Anders Nyboe Jensen.jpg" alt="">
@@ -123,8 +123,30 @@
             </section>
 
         </section>
-        <footer class="grid-footer">4</footer>
+        <footer class="footer">
+
+            <select class="languages" onchange="javascript:handleSelect(this)">
+                <option value="index">Dansk</option>
+                <option value="English">English</option>
+            </select>
+            <nav>
+                <li>
+                    Sitemap
+                </li>
+                <li><a href="index.html"> Home</a></li>
+                <li><a href="/Pages/Projket.html">Projket</a></li>
+                <li><a href="/Pages/Skills.html">Skills</a></li>
+                <li><a href="/Pages/Om_mig.html">Om Mig</a></li>
+            </nav>
+            <nav>
+                <li> Email: andnj25@gmail.com </li>
+                <li> Mobil: +45 20 82 63 45 </li>
+
+            </nav>
+        </footer>
     </div>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.0.1/dist/gsap.min.js"></script>
+<script type="text/javascript" src="js/main.js"></script>
 
 </html>

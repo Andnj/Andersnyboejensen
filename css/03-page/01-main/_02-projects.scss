@@ -1,0 +1,141 @@
+.main_projects {
+    display: grid;
+
+    grid-auto-rows: minmax(865px, 1fr);
+    margin-top: 200px;
+    margin-bottom: 320px;
+
+    @media screen and (max-width: 944px) {
+
+        margin-top: 0px;
+    }
+
+    article {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+
+    }
+
+    #projects_article_middel_img {
+        order: 2;
+
+        @media screen and (max-width: 944px) {
+            order: 0;
+        }
+    }
+
+    .test {
+        opacity: 0;
+    }
+
+    .test2 {
+        opacity: 0;
+    }
+
+    @keyframes anim1 {
+        from {
+            opacity: 0;
+            transform: translateX(-100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+    @keyframes anim2 {
+        from {
+            opacity: 0;
+            transform: translateX(100px);
+        }
+
+        to {
+            opacity: 1;
+            transform: translateX(0);
+        }
+    }
+
+
+    #projects_article_middel {
+        margin-left: 200px;
+
+        @media screen and (max-width: 944px) {
+            margin-left: 5%;
+        }
+    }
+
+    section {
+        align-self: center;
+
+        @media screen and (max-width: 1220px) {
+
+            margin-left: 5%;
+        }
+
+        @media screen and (max-width: 944px) {
+
+            margin-top: 100px;
+        }
+    }
+
+    .projects_titel {
+        font-family: $Main_font;
+        color: $sixth-color;
+        font-style: normal;
+        font-weight: bold;
+        font-size: 2.625rem;
+        text-transform: capitalize;
+        line-height: 57px;
+        padding-bottom: 50px;
+
+    }
+
+    .projects_text {
+        font-family: $Main_font;
+        color: $sixth-color;
+        font-style: normal;
+        font-weight: normal;
+        font-size: 1.5rem;
+    }
+
+    .projects_titel,
+    .projects_text {
+        @media screen and (max-width: 944px) {
+
+            margin-left: 10%;
+            margin-right: 10%;
+        }
+    }
+
+    figure {
+        align-self: center;
+        justify-self: center;
+        overflow: hidden;
+
+        img {
+            max-width: 100%;
+            height: auto;
+            transform: scale(1);
+            transition: ease-out 0.3s;
+
+            &:hover {
+                transform: scale(1.1);
+            }
+
+            // &:hover.projects_titel {
+            //     color: #860bd8;
+            // }
+
+
+        }
+
+
+        @media screen and (max-width: 944px) {
+
+            margin-top: 200px;
+        }
+    }
+
+
+}

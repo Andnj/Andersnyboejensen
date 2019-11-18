@@ -1,0 +1,92 @@
+.contacts {
+    display: grid;
+
+    grid-auto-rows: auto;
+
+    .contacts_content {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+
+    .contacts_img {
+        justify-self: center;
+        background-image: url('/img/ball_array.svg'), url('/img/X_array.svg');
+        background-repeat: no-repeat, no-repeat;
+        background-position:
+            calc(100% - 0px) calc(25% - 0px),
+            calc(0% - 0px) calc(60% - 0px);
+
+    }
+
+    #profile_image {
+        max-width: 450px;
+        height: auto;
+        clip-path: circle(34.4% at 50% 35%);
+        margin-top: 100px;
+
+    }
+
+    .contacts_info {
+        align-self: center;
+        justify-self: start;
+        color: $sixth-color;
+        font-family: $Main_font;
+        font-style: normal;
+        font-size: 2.25rem;
+        font-weight: 300;
+        line-height: 200%;
+
+        a {
+            font-weight: 600;
+            color: $sixth-color;
+
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+
+        #name_contacts_info {
+            font-size: 4rem;
+            line-height: 200%;
+        }
+
+        @media (max-width: 944px) {
+            margin-left: 5%;
+
+        }
+
+    }
+
+    .contacts_status {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+        justify-self: center;
+        color: $sixth-color;
+        font-family: $Main_font;
+        font-style: normal;
+        font-size: 3rem;
+        font-weight: 300;
+        align-self: start;
+        margin-bottom: 50px;
+
+        @media (max-width: 944px) {
+            margin-top: 50px;
+            margin-left: 5%;
+            font-size: 2rem;
+        }
+
+        span {
+            color: $seventh-color;
+            font-family: $Second_font;
+            font-style: normal;
+            font-size: 3rem;
+            font-weight: bold;
+            text-decoration-line: underline;
+
+            @media (max-width: 944px) {
+                font-size: 2rem;
+            }
+        }
+    }
+
+}

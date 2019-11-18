@@ -1,0 +1,107 @@
+.Landing {
+    display: grid;
+    grid-template-rows: 100px auto;
+    background-color: $primary-color;
+}
+
+.Landing_content {
+
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(600px, 1fr));
+    justify-content: center;
+    align-content: center;
+
+    .Landing_call_to_action {
+        font-family: $Main_font;
+        color: $third-color;
+        justify-self: center;
+        align-self: center;
+        margin-bottom: 240px;
+
+        @media (max-width: 1400px) {
+            margin-left: 5%;
+
+        }
+
+        @media screen and (max-width: 944px) {
+            margin-top: 240px;
+
+        }
+
+        .titel_landing_call_to_action {
+            font-weight: bold;
+            font-size: 3rem;
+            line-height: 65px;
+        }
+
+        .text_landing_call_to_action {
+            font-weight: 600;
+            font-size: 1.5rem;
+            line-height: 34px;
+            margin-top: 40px;
+        }
+
+        .button_call_to_action {
+            margin-top: 117px;
+            float: left;
+            padding: 1.5em 2.5em;
+            border-radius: 13px;
+            font-family: $Second_font;
+            font-weight: bold;
+            transition: 0.3s;
+            // border: 5px solid transparent;
+
+            p {
+                font-size: 2rem;
+            }
+
+        }
+
+        #call_to_action_left {
+            background: $third-color;
+            color: $fifth-color;
+            margin-right: 21px;
+
+
+            &:hover {
+                background: darken($third-color, 20%);
+            }
+
+        }
+
+        #call_to_action_right {
+
+            background: $fifth-color;
+            color: $third-color;
+
+            &:hover {
+                background: darken($fifth-color, 10%);
+
+            }
+        }
+    }
+
+    .Landing_img {
+        img {
+            max-width: 100%;
+            height: auto;
+
+            @media screen and (max-width: 1220px) {
+                max-width: 90%;
+                margin-left: 5%;
+            }
+
+            @media screen and (max-width: 944px) {
+                max-width: 80%;
+                margin-left: 10%;
+            }
+        }
+
+        figcaption {
+            float: right;
+            color: $third-color;
+            margin-right: 120px;
+            font-family: $Main_font;
+        }
+    }
+}

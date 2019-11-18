@@ -1,0 +1,28 @@
+.footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    background-color: $fourth-color;
+
+    nav li,
+    a {
+        text-decoration: none;
+        list-style-type: none;
+        font-size: 1rem;
+        color: $third-color;
+        font-family: $Main_font;
+    }
+
+
+    .languages {
+        border: 2px solid $third-color;
+        user-select: none;
+        height: 40px;
+        width: 150px;
+        font-size: 1em;
+        color: white;
+        // color: $fourth-color;
+        background-color: $fourth-color;
+
+    }
+
+}
