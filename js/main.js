@@ -8,7 +8,7 @@ const pro_right = document.querySelectorAll('.anim_right');
 
 let options = {
     root: null,
-    rootMargin: '30% 0px 0px 50%',
+    rootMargin: '50% 0px 0px 0px',
     threshold: 0.2
 };
 
