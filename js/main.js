@@ -8,7 +8,7 @@ const pro_right = document.querySelectorAll('.test2');
 
 let options = {
     root: null,
-    rootMargin: '0px 0px 0px 0px',
+    rootMargin: '30% 0px 0px 70%',
     threshold: 1.0
 };
 
